@@ -1,0 +1,12 @@
+# Built locally from your own copy of the clip; never committed (her art is Netflix / CD PROJEKT RED's)
+media/
+mate-src/
+mate/
+rig/parts/
+rig/*.png
+rig/*.blend
+rig/*.blend1
+# tools
+.venv/
+__pycache__/
+*.pyc

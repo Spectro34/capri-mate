@@ -1,0 +1,13 @@
+# Template: setup.sh fills in @REPO@ and installs it as ~/.config/systemd/user/capri-mate.service
+[Unit]
+Description=Capri desktop mate (holds still, zaps around, talks back; click-through)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 -I @REPO@/mate.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

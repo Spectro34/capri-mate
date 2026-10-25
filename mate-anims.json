@@ -1,0 +1,88 @@
+{
+ "note": "Shots for the desktop mate (build_mate.py). src = folder in mate-src/ (cutout.py, or rig/rig.py for rig_*). role: hover (the default loop), enter (played after a teleport), and the rig actions: rest, look, pet, poke, turn, bored, leave/arrive (teleporting out and in), talk (mouth shapes while she speaks). like: same camera framing as that shot (its scale and face spot). face_at: face spot by hand, in source-frame px. Source: youtu.be/Nli_SZ-DBco, frames counted at 20 fps from 240.01 s (setup.sh): float = 34..67, glitchin = 417..429.",
+ "anims": [
+  {
+   "name": "float",
+   "src": "float",
+   "role": "hover",
+   "loop": "pingpong",
+   "face_at": [
+    960,
+    905
+   ]
+  },
+  {
+   "name": "glitchin",
+   "src": "glitchin",
+   "role": "enter",
+   "loop": "once",
+   "like": "float"
+  },
+  {
+   "name": "idle",
+   "src": "rig_idle",
+   "role": "rest",
+   "like": "float"
+  },
+  {
+   "name": "look_l",
+   "src": "rig_look_l",
+   "role": "look",
+   "like": "float"
+  },
+  {
+   "name": "look_r",
+   "src": "rig_look_r",
+   "role": "look",
+   "like": "float"
+  },
+  {
+   "name": "grin",
+   "src": "rig_grin",
+   "role": "pet",
+   "like": "float"
+  },
+  {
+   "name": "laugh",
+   "src": "rig_laugh",
+   "role": "pet",
+   "like": "float"
+  },
+  {
+   "name": "flare",
+   "src": "rig_flare",
+   "role": "poke",
+   "like": "float"
+  },
+  {
+   "name": "whip",
+   "src": "rig_whip",
+   "role": "turn",
+   "like": "float"
+  },
+  {
+   "name": "droop",
+   "src": "rig_droop",
+   "role": "bored",
+   "like": "float"
+  },
+  {
+   "name": "vanish",
+   "src": "rig_vanish",
+   "role": "leave",
+   "like": "float"
+  },
+  {
+   "name": "appear",
+   "src": "rig_appear",
+   "role": "arrive",
+   "like": "float"
+  },
+  {
+   "name": "talk",
+   "src": "rig_talk",
+   "role": "talk",
+   "like": "float"
+  }
+ ]
+}

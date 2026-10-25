@@ -1,0 +1,7 @@
+# Build-time only (cutting her out of the clip and making the sprites); the mate itself runs on system Python.
+# torch and torchvision come from the CPU wheel index first (setup.sh), so no CUDA download.
+transformers>=4.56
+opencv-python-headless
+pillow
+numpy
+yt-dlp[default]
